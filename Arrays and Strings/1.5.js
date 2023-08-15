@@ -44,11 +44,11 @@ function checkIfOneAddOrRemove(longerString, shorterString) {
   let index2 = 0
 
   while (index1 < longerString.length) {
-    if (foundDifference) {
-      return false
-    }
 
     if (longerString.charAt(index1) != shorterString.charAt(index2)) {
+      if (foundDifference) {
+        return false
+      }
       foundDifference = true
       index1++
     } else {
