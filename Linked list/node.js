@@ -14,3 +14,13 @@ const d = new Node("D")
 a.next = b
 b.next = c
 c.next = d
+
+
+printAllNodes(root){
+  const current = root
+
+  while (current.next != null) {
+    console.log(current.val)
+    current = current.next
+  }
+}
