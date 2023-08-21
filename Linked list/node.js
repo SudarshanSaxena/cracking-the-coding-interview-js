@@ -16,11 +16,14 @@ b.next = c
 c.next = d
 
 
-printAllNodes(root){
-  const current = root
+function printAllNodes(root) {
+  let current = root
 
-  while (current.next != null) {
+  while (current != null) {
     console.log(current.val)
     current = current.next
   }
 }
+
+
+printAllNodes(a)
