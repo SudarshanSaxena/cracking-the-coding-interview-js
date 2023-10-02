@@ -11,6 +11,8 @@ function checkIfPalindromeExists(string) {
     hashMap.set(char, (hashMap.get(char) || 0) + 1)
   }
 
+  // just need to see if there is a characted which has odd number of occurences
+  // the palindrome needs to be a mirror image so if at max there can only be one odd numbered character
   for (let [key, value] of hashMap) {
     if (value % 2 != 0) {
       foundOneOdd += 1

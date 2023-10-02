@@ -9,10 +9,8 @@ function checkIfUnique(string) {
   }
 
   for (const [key, value] of hashMap) {
-    if (value > 1) duplicateFlag = true
+    if (value > 1) return true
   }
-
-  return duplicateFlag
 }
 
 console.log(checkIfUnique('abca'))

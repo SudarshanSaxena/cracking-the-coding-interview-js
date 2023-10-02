@@ -1,4 +1,6 @@
-// one edit away
+// one edit away - (abca,abc) - true
+// (abca,abcd) - true
+// (abca, abba) - false 
 
 function checkIfOndeEditAway(string1, string2) {
   if (Math.abs(string1.length - string2.length) > 1) {

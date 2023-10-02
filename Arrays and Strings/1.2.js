@@ -1,4 +1,4 @@
-// Check permutation
+// Check permutation - if string1 can be made from string 2
 
 function checkPermutation(string1, string2) {
   let hashMap1 = new Map()
